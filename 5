@@ -1,0 +1,40 @@
+#include "stdafx.h"
+#include "iostream"
+#include "string"
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "ru");
+	int x;
+	string x1,x2;
+	cout << "Введите целое число: ";
+	cin >> x;
+	if (x < 0){
+		x1 = "Отрицательное ";
+		if (x % 2 == 0){
+			x2 = "четное ";
+		}
+		else
+		{
+			x2 = "нечетное";
+		}
+		cout << x1 << x2 << "число" << endl;
+	}
+	if (x > 0){
+		x1 = "Положительное ";
+		if (x % 2 == 0){
+			x2 = "четное ";
+		}
+		else
+		{
+			x2 = "нечетное ";
+		}
+		cout << x1 << x2 << "число" << endl;
+	}
+	if (x == 0){
+		x1 = "Нулевре число ";
+		cout << x1 << endl;
+	}
+	return 0;
+}
