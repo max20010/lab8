@@ -1,0 +1,24 @@
+#include "stdafx.h"
+#include "iostream"
+#include "string"
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "ru");
+	int x;
+	string x1, x2;
+	if (x >= 100){
+		x1 = "Трехзначное ";
+	}
+	if (x >=10&&x<100){
+		x1 = "Двузначное ";
+	}
+	if (x < 10){
+		x1 = "Однозначно ";
+	}
+	if (x % 2 == 0){
+		x2 = "четное ";
+	}
+	return 0;
+}
