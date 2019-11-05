@@ -1,0 +1,24 @@
+#include "stdafx.h"
+#include "iostream"
+using namespace std;
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "ru");
+	int a, b;
+	cout << "Введите А:";
+	cin >> a;
+	cout << "Введите B:";
+	cin >> b;
+	if (a > b){
+		b = a;
+	}
+	if (b > a){
+		a = b;
+	}
+	if (a == b){
+		a = 0;
+		b = 0;
+	}
+	cout << "A = " << a << " B = " << b << endl;
+	return 0;
+}
