@@ -1,0 +1,26 @@
+#include "stdafx.h"
+#include "iostream"
+using namespace std;
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "ru");
+	int x, y, n;
+	cout << "Введите х и y : ";
+	cin >> x;
+	cin >> y;
+	if (x > 0 && y > 0){
+		n = 1;
+       }
+	if (x < 0 && y > 0){
+		n = 2;
+	}
+	if (x < 0 && y < 0){
+		n = 3;
+	}
+	if (x > 0 && y < 0){
+		n = 4;
+	}
+	cout << n << " четверть." << endl;
+	return 0;
+}
