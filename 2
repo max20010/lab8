@@ -1,0 +1,26 @@
+#include "stdafx.h"
+#include "iostream"
+using namespace std;
+int _tmain(int argc, _TCHAR* argv[])
+{
+	setlocale(LC_ALL, "ru");
+	int x[3],sum=0;
+	cout << "Введите 3 числа: ";
+	for (int i = 0; i < 3; i++){
+		cin >> x[i];
+	}
+	int min = x[0];
+	for (int i = 0; i < 3; i++){
+		if (min>x[i]){
+			min = x[i];
+		}
+	}
+	for (int i = 0; i < 3; i++){
+		if (x[i] != min){
+			sum += x[i];
+		}
+	}
+	cout << sum << endl;
+	return 0;
+}
+
