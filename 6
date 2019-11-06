@@ -1,24 +1,32 @@
-#include "stdafx.h"
+#include "pch.h"
 #include "iostream"
 #include "string"
 using namespace std;
 
-int _tmain(int argc, _TCHAR* argv[])
+int main()
+
 {
 	setlocale(LC_ALL, "ru");
 	int x;
 	string x1, x2;
-	if (x >= 100){
-		x1 = "Трехзначное ";
+	cin >> x;
+	if (x >= 100) {
+		x1 = "трехзначное ";
 	}
-	if (x >=10&&x<100){
-		x1 = "Двузначное ";
+	if (x >= 10 && x < 100) {
+		x1 = "двузначное ";
 	}
-	if (x < 10){
-		x1 = "Однозначно ";
+	if (x < 10) {
+		x1 = "однозначно ";
 	}
-	if (x % 2 == 0){
+	if (x % 2 == 0) {
 		x2 = "четное ";
 	}
+	else
+	{
+		x2 = "нечетное";
+	}
+	cout << x2 << x1 << "число" << endl;
+
 	return 0;
 }
